@@ -8,19 +8,24 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include? method os checking to see if there is a specific substring exists within the given string.
+# The return value or output will check to be true since in fact the substring that was called for was found
 "Hello World".include?("Hello")
 
-
+# The end_with? method is checking if the given strings end with a specific substring
+# The output to this method will be false since the string does not end with "Hello"
 "Hello World".end_with?("Hello")
 
-
+# The end_with? method is calling to check if the string ends with the substring "rld"
+# The output to this will check to be true since in fact the string ends with "rld"
 "Hello World".end_with?("rld")
 
-
+# The method even? is used to verify whether an integer is even, in this case the integer is 12
+# The output will be true since in fact 12 is an even number
 12.even?
 
-
+# The method next is calling the next integer in the sequence 
+# The method returns the next integer as it was calling for, which will be 19
 18.next
 
 
