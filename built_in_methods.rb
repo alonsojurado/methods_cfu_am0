@@ -32,8 +32,22 @@
 
 # SECTION 2: Calling methods on variables assigned to strings.
 # Declare 2 variables assigned to string objects.
-# Call a different built-in Ruby method on each of your variables. 
-# https://ruby-doc.org/core-3.1.0/String.html
+
+first_name = "peter"
+last_name = "smith"
+
+# Call a different built-in Ruby method on each of your variables. https://ruby-doc.org/core-3.1.0/String.html
+# We are calling for a method to upcase the all letter in the names
+# This will output PETER and SMITH
+puts first_name.upcase
+puts last_name.upcase
+
+# The method is calling for the integer in the first_name to capitalize 
+# The output for this method will print Peter Smith
+puts first_name.capitalize
+puts last_name.capitalize
+
+
 # Include comments above each method call explaining the impact and return value of that method.
 
 # EXAMPLE
@@ -45,17 +59,36 @@ first_name = "Jeff"
 puts first_name.start_with?("J")
 
 
-
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
-# Call a different built-in Ruby method on each of your variables. 
-# https://ruby-doc.org/core-3.1.0/Integer.html
+
+age = 32
+year = 1992
+
+# Call a different built-in Ruby method on each of your variables. https://ruby-doc.org/core-3.1.0/Integer.html
+
+# The built in method .next is calling for the return of the next integer
+# When called on age, it will return the next integer in sequence which will be 33
+# The built it method .even? is checking to see if the integer designated in the year variable is even
+# When called, the method .even? will deem to be true as in fact it is an even number
+puts age.next 
+puts year.even?
+
 # Include comments above each method call explaining the impact and return value of that method.
 
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
-# Call a different built-in Ruby method on each of your variables. 
-# https://ruby-doc.org/core-3.1.0/Array.html
+
+car_make = ["ford"," chevy", "toyota"," honda"]
+numbers = [1,2,3,4,]
+
+# Call a different built-in Ruby method on each of your variables. https://ruby-doc.org/core-3.1.0/Array.html
+
+# The method .first is asking for the first element in the array which will be ford
+# The method .sum is adding up all the integer elements in the array which will output to 10
+puts car_make.first
+puts numbers.sum
+
 # Include comments above each method call explaining the impact and return value of that method.
